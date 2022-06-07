@@ -1,0 +1,6 @@
+{
+  "port": 5000,
+  "mongoUri": "mongodb+srv://admin:7XNntEI7W0hsOueO@cluster0.gxl0p.mongodb.net/wedding?retryWrites=true&w=majority",
+  "jwtSecret": "secret code for learn",
+  "baseUrl": "http://localhost:5000"
+}

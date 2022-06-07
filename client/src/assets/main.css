@@ -1,0 +1,7 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@import 'vueup/vue-quill/dist/vue-quill.snow.css';
