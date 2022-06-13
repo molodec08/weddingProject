@@ -4,7 +4,7 @@
       <div class="about">
         <h2>{{ header }}</h2>
         <div class="invitation">
-          <p class="desc" v-html="desc"></p>
+          <p class="desc" v-html="desc" />
           <img
             class="single_image"
             src="../../assets/img/micheile-henderson-g.jpg"

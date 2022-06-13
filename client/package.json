@@ -19,8 +19,10 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^3.0.0",
     "vue-axios": "^3.2.4",
+    "vue-color-kit": "^1.0.5",
     "vue-document-editor": "^1.2.4",
     "vue-router": "^4.0.5",
+    "vue-yandex-maps": "^0.12.3",
     "vue3-quill": "^0.2.4",
     "vuex": "^4.0.0"
   },

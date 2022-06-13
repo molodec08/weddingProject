@@ -5,6 +5,7 @@ import Login from "../views/Login";
 import AdminPanel from "../views/AdminPanel";
 import DescriptionEvent from "../views/DescriptionEvent";
 import Guests from "../views/Guests";
+import ColorsEditor from "../views/ColorsEditor";
 import UpdateGuest from "../components/Guests/UpdateGuest";
 import Revision from "../components/Revision/Revision";
 
@@ -51,6 +52,12 @@ const router = createRouter({
           path: "/guests/:id",
           name: "Guest",
           component: UpdateGuest,
+          meta: { auth: true }
+        },
+        {
+          path: "/color-editor",
+          name: "ColorEditor",
+          component: ColorsEditor,
           meta: { auth: true }
         }
       ]
