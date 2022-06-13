@@ -103,6 +103,15 @@
               >
                 Гости
               </router-link>
+
+              <router-link
+                to="/color-editor"
+                :class="[
+                  $route.name === 'ColorEditor' ? activeClass : inactiveClass
+                ]"
+              >
+                Редактор цветов
+              </router-link>
             </div>
           </div>
           <button
@@ -222,6 +231,12 @@
           class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
         >
           Гости
+        </a>
+        <a
+          href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+        >
+          Редактор цветов
         </a>
       </div>
     </div>

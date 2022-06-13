@@ -1,13 +1,20 @@
 <template>
-  <div class="map-box">
-    <yandex-map
-      zoom="16"
-      style="width: 100%; max-width: 100%; height: 56vh;"
-      :coords="coords"
-    >
-      <ymap-marker :coords="coords" marker-id="123" hint-content="some hint" />
-    </yandex-map>
-  </div>
+  <section>
+    <h2>Братва на связи</h2>
+    <div class="map-box">
+      <yandex-map
+        zoom="16"
+        style="width: 100%; max-width: 100%; height: 56vh;"
+        :coords="coords"
+      >
+        <ymap-marker
+          :coords="coords"
+          marker-id="123"
+          hint-content="some hint"
+        />
+      </yandex-map>
+    </div>
+  </section>
 </template>
 
 <script>

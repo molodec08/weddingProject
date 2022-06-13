@@ -32,6 +32,7 @@ app.use('/', express.static(path.join(__dirname, '../dist')));
 app.use('/auth', require('./routes/auth.routes'));
 app.use('/guests', require('./routes/guests.routes'));
 app.use('/description-event', require('./routes/desc.routes'));
+app.use('/color-editor', require('./routes/colors.routes'));
 
 if (process.env.NODE_ENV === 'production') {
     app.use('/', express.static(path.join(__dirname, 'client', 'dist')));
