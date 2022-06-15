@@ -110,8 +110,9 @@
     line-height: 40px;
   }
   .header__content p {
-    font-size: 32px;
-    line-height: 60px;
+    margin-top: 20px;
+    font-size: 27px;
+    line-height: 40px;
   }
   .round-img {
     width: 250px;

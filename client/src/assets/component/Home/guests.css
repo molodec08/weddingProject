@@ -35,9 +35,15 @@
     .item {
         width: 35%;
     }
+    .guests {
+        background-repeat: repeat;
+    }
 }
 
 @media (max-width:767px) {
+    .container h2 {
+        margin: 10px 30px;
+    }
     .guests-list {
         margin: 0 30px;
     }
