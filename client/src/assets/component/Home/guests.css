@@ -1,6 +1,6 @@
 .guests {
     background-image: url('../../img/h2-background-img-2.jpg');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 .guests-list {
     height: 100%;
