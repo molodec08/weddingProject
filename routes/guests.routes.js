@@ -31,18 +31,35 @@ router.post(
     try {
       const file = req.files.file;
 
-      const path = `./client/public/img/${file.name}`;
+      const path1 = `./client/public/img/${file.name}`;
+      const path2 = `./client/dist/img/${file.name}`;
 
-      if (fs.existsSync(path)) {
+      if (fs.existsSync(path1)) {
         return res.status(400).json({message: "Файл с таким именем уже существует"})
       }
 
-      file.mv(path);
+      await file.mv(path1);
+      function copyFile(source, target) {
+        return new Promise(function(resolve, reject) {
+          const rd = fs.createReadStream(source);
+          rd.on('error', rejectCleanup);
+          const wr = fs.createWriteStream(target);
+          wr.on('error', rejectCleanup);
+          function rejectCleanup(err) {
+            rd.destroy();
+            wr.end();
+            reject(err);
+          }
+          wr.on('finish', resolve);
+          rd.pipe(wr);
+        });
+      }
+      await copyFile(path1, path2)
 
       res.status(201).json(`../img/${file.name}`);
 
     } catch (e) {
-      res.status(500).json( { message: 'Что-то пошло не так, попробуйте снова' })
+      res.status(500).json( { message: 'Что-то пошло не так, попробуйте снова', error: e })
     }
   }
 );
