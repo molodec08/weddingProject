@@ -22,7 +22,7 @@ import { mapState } from "vuex";
 export default {
   data() {
     return {
-      title: "Кого мы ждём, и не очень:",
+      title: "Кого мы ждём:",
       guestsList: []
     };
   },

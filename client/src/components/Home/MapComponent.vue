@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <h2>Братва на связи</h2>
+      <h2>{{ title }}</h2>
     </div>
     <div class="map-box">
       <yandex-map
@@ -26,6 +26,7 @@
     components: { yandexMap, ymapMarker },
     data() {
       return {
+        title: 'Место проведения торжества',
         coords: [54.567513, 36.087499],
       };
     },
