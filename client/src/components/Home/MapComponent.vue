@@ -1,6 +1,8 @@
 <template>
   <section>
-    <h2>Братва на связи</h2>
+    <div class="container">
+      <h2>Братва на связи</h2>
+    </div>
     <div class="map-box">
       <yandex-map
         zoom="16"
@@ -63,4 +65,4 @@
   };
 </script>
 
-<style src="../../assets/component/Home/map.css" scoped></style>
+<style src="../../assets/component/Home/map.css"></style>
