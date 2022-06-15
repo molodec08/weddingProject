@@ -30,7 +30,7 @@
 export default {
   data() {
     return {
-      title: "До свадебной вечеринОчки Юрия и Дарьи осталось",
+      title: "Cвадьба Юрия и Дарьи через",
       date: "23 июля 2022",
       displayDays: 0,
       displayHours: 0,
@@ -67,7 +67,7 @@ export default {
       ),
       Minutes: new Array(
         "минут",
-        "минута",
+        "минуту",
         "минуты",
         "минуты",
         "минуты",
@@ -79,7 +79,7 @@ export default {
       ),
       Seconds: new Array(
         "секунд",
-        "секунда",
+        "секунду",
         "секунды",
         "секунды",
         "секунды",
