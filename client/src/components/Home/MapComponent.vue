@@ -12,7 +12,7 @@
         <ymap-marker
           :coords="coords"
           marker-id="123"
-          hint-content="some hint"
+          hint-content="место кутежа"
         />
       </yandex-map>
     </div>
